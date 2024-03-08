@@ -3,4 +3,7 @@
 export PATH=$PATH:${fdroidserver}
 
 . /etc/profile.d/bsenv.sh
-${fdroidserver}/fdroid nightly -v $*
+cd ${fdroidserver}
+pwd
+echo $PATH
+./fdroid nightly -v $*
